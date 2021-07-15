@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<html>
+<head>
+<title>K.B. kindergarten</title>
+  <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <link href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="admin_login.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css">
+</head>
+<body>
+  <center>
+  <h1 style="font-size: 32px">K.B. kindergarten</h1> 
+
+
+  <div class="login">
+      <h1>Login</h1>
+      <form action="authenticate.php" method="post">
+        <label for="username">
+          <i class="fas fa-user"></i>
+        </label>
+        <input type="text" name="username" placeholder="Username" id="username" required>
+        <label for="password">
+          <i class="fas fa-lock"></i>
+        </label>
+        <input type="password" name="password" placeholder="Password" id="password" required>
+        
+        <div class="wrapper">
+          <div class="form">
+            <div class="inputfield">
+              <div class="custom_select">
+                <p>Login As:</p>
+                  <select name="loginas" id="loginas" required>
+                    <option value="Student">Student</option>
+                    <option value="Admin">Admin</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+        <input type="submit" name="Login" value="Login">
+      </form>
+    </div>
+  </center>
+</body>
+</html>
